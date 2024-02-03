@@ -7,3 +7,47 @@
 html, body {
     font-family: 'Nunito', sans-serif;
 }
+
+@media (min-width: 1280px){
+.container {
+    max-width: 1200px;
+}}
+
+@media (min-width: 1200px){
+.container {
+    
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}}
+/* HEADER  */
+.mainHeader {
+    background-color: white;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+.navMain a {
+    color: black;
+}
+
+.navMain .navbar-brand p {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #dc4f72;
+    letter-spacing: -1px;
+}
+
+.mainHeader .navMain .nav-item {
+    padding: 0 5px;
+}
+.mainHeader .navMain .navbar-nav li:first-child a {
+    color: #dc4f72;
+}
