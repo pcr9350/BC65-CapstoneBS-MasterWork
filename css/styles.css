@@ -6,6 +6,7 @@
 
 html, body {
     font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
 }
 
 @media (min-width: 1280px){
@@ -24,6 +25,7 @@ html, body {
 /* HEADER  */
 .mainHeader {
     background-color: white;
+    width: 100%;
     padding: 0px;
     transition: all 0.4s ease 0s;
     height: 90px;
@@ -45,9 +47,39 @@ html, body {
     letter-spacing: -1px;
 }
 
-.mainHeader .navMain .nav-item {
+.mainHeader #navbarHeader .nav-item {
     padding: 0 5px;
 }
-.mainHeader .navMain .navbar-nav li:first-child a {
+.mainHeader #navbarHeader li:first-child a {
     color: #dc4f72;
+}
+
+.mainHeader #navbarHeader .nav-link {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    padding: 2px 0;
+    font-size: 1rem;
+    font-weight: 400;
+
+} 
+
+.mainHeader #navbarHeader .nav-link::after {
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: #dc4f72;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.4s;
+}
+
+.mainHeader #navbarHeader .nav-link:hover {
+    color: #dc4f72;
+}
+
+.mainHeader #navbarHeader .nav-link:hover::after {
+    left: 0;
 }
