@@ -6,4 +6,80 @@
 
 html, body {
     font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+@media (min-width: 1280px){
+.container {
+    max-width: 1200px;
+}}
+
+@media (min-width: 1200px){
+.container {
+    
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}}
+/* HEADER  */
+.mainHeader {
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+.navMain a {
+    color: black;
+}
+
+.navMain .navbar-brand p {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #dc4f72;
+    letter-spacing: -1px;
+}
+
+.mainHeader #navbarHeader .nav-item {
+    padding: 0 5px;
+}
+.mainHeader #navbarHeader li:first-child a {
+    color: #dc4f72;
+}
+
+.mainHeader #navbarHeader .nav-link {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    padding: 2px 0;
+    font-size: 1rem;
+    font-weight: 400;
+
+} 
+
+.mainHeader #navbarHeader .nav-link::after {
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: #dc4f72;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.4s;
+}
+
+.mainHeader #navbarHeader .nav-link:hover {
+    color: #dc4f72;
+}
+
+.mainHeader #navbarHeader .nav-link:hover::after {
+    left: 0;
 }
